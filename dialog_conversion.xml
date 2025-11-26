@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6A1B9A"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/conversionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert GBP ↔ USD"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/directionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GBP → USD"
+            android:textSize="14sp"
+            android:textColor="#E1BEE7"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/amountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:paddingBottom="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Calculate"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#AB47BC" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00897B"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:minHeight="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/directionButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Swap"
+                android:textSize="13sp"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#00897B" />
+
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Done"
+                android:textSize="13sp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="#757575" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
